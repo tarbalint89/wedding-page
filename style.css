@@ -1,7 +1,21 @@
 * {
 	box-sizing: border-box;
 }
-
+html {
+	background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png") repeat center;
+	color: #444349;
+}
+h1, h2 {
+	font-family: 'Great Vibes', cursive;
+}
+h2 {
+	font-size: 3rem;
+	margin: 2.5rem 0;
+}
+img {
+	width: 7rem;
+	margin: 2rem;
+}
 
 
 /* === HEADER === */
@@ -28,7 +42,6 @@
 }
 .text h1 {
 	font-size: 7rem;
-	font-family: 'Great Vibes', cursive;
 	color: #d2ba87;
 	padding: 1.5rem 0;
 }
@@ -85,3 +98,102 @@
 		padding-bottom: .5rem;
 	}
 }
+
+
+
+/* === MAIN === */
+
+.locations, .gifts, .contact {
+	margin: 2rem;
+}
+
+
+/* === SECTION LOCATIONS === */
+
+.locations {
+	text-align: center;
+}
+.blurb {
+	display: inline-block;
+	width: 30%;
+	padding: 1rem;
+	margin: 1rem 0;
+}
+.blurb h3 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	font-family: 'Libre Baskerville', serif;
+}
+.blurb div {
+	font-family: 'Muli', sans-serif;
+	font-size: 1.125rem;
+	padding: .25rem 0;
+}
+
+
+@media screen and (max-width: 768px) {
+	.blurb {
+		width: 100%;
+		margin: 0;
+		padding-bottom: 0;
+	}
+	.blurb::after {
+		content: "";
+		height: 3px;
+		background-color: #444349;
+		display: inline-block;
+		width: 25vw;
+		margin: 2rem 0 1rem;
+	}
+}
+
+
+
+/* === SECTION PROGRAM === */
+
+.program {
+	background-color: rgb(0,0,0,.6);
+	width: 100%;
+	color: #d2ba87;
+	padding: .5rem 0 2rem;
+	font-family: 'Muli', sans-serif;
+	font-size: 1.125rem;
+}
+.program-wrapper {
+	width: 30%;
+	margin: 0 auto;
+}
+.program-wrapper h2 {
+	text-align: center;
+}
+.program-wrapper p {
+	font-style: italic;
+	padding-bottom: 2rem;
+}
+.program-wrapper {
+	line-height: 1.625rem;
+}
+
+
+@media screen and (max-width: 768px) {
+	.program-wrapper {
+		width: 100%;
+		padding: 1rem;
+	}
+}
+
+
+
+/* === SECTION GIFTS === */
+
+.gifts {
+	text-align: center;
+	font-family: 'Libre Baskerville', serif;
+}
+.gifts p {
+	font-size: 1.125rem;
+}
+
+
+
+/* === SECTION FAQ === */
