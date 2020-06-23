@@ -2,254 +2,86 @@
 	box-sizing: border-box;
 }
 
-body {
-	background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png") repeat center;
-	padding-bottom: 5rem;
-	position: absolute;
-}
-
-a {
-	text-decoration: none;
-	color: #bd806e;
-}
-a:hover {
-	color: #eda087;
-}
-.locations, .program, .gifts, .faq, .contact {
-	width: 95%;
-	margin: 1.5rem auto;
-	padding: .5rem 1rem;
-	text-align: center;
-}
-h3 {
-	font-size: 1.5rem;
-	font-family: "Libre Baskerville", serif;
-}
 
 
 /* === HEADER === */
 
-
-
 .cover {
+	background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg") no-repeat center/cover;
 	height: 100vh;
 	width: 100vw;
-	background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg") no-repeat center/cover;
 	display: table;
 }
 
-.wrapper {
+.text-wrapper {
 	text-align: center;
 	display: table-cell;
 	vertical-align: middle;
 }
-
-.tagline {
-	text-transform: uppercase;
-	font-size: 1.5rem;
-	letter-spacing: .15rem;
-}
-.text-wrapper {
+.text {
+	width: 50%;
+	margin: 0 auto;
 	background-color: rgba(0,0,0,.5);
-	padding: 1.35rem;
-	margin: 1rem auto;
-	width: 625px;
+	border-radius: 5px;
+	color: rgba(255,255,255,.9);
+	padding: 2rem;
 }
-
-.tagline, .date {
-	color: hsla(0,0%,100%,.9);
+.text h1 {
+	font-size: 7rem;
+	font-family: 'Great Vibes', cursive;
+	color: #d2ba87;
+	padding: 1.5rem 0;
+}
+.tagline {
+	letter-spacing: .15rem;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 1.25rem;
+	text-transform: uppercase;
 }
 .tagline::after {
-	display: block;
 	content: "";
-	background-color: #fff;
 	height: 1px;
+	background-color: #fff;
+	display: block;
 	width: 12rem;
-	margin: .75rem auto;
+	margin: 1rem auto;
 }
 .date {
-	font-family: "Libre Baskerville", serif;
+	font-family: 'Libre Baskerville', serif;
 	font-size: 1.25rem;
 	letter-spacing: .15rem;
-	display: block;
-	margin: .25rem;
 }
-.date::before, .date::after {
-	display: inline-block;
+.date::before {
 	content: "";
-	background-color: #fff;
 	height: 1px;
-	width: 2rem;
-	margin: .35rem;
-}
-.text-wrapper h1 {
-	color: #d2ba87;
-	font-family: "Great Vibes", cursive;
-	font-size: 7rem;
-	margin: 2.25rem;
-}
-
-/* === MAIN === */
-
-
-/* === SECTION LOCATIONS === */
-.locations {
-	text-align: center;
-	padding: 2rem;
-	margin: 1.5rem auto;
-	color: #444349;
-}
-.blurb img {
-	width: 7.5rem;
-	margin-bottom: 2rem;
-}
-.blurb {
+	background-color: #fff;
 	display: inline-block;
-	margin: .5rem;
-	padding: 1.5rem;
-	width: 30%;
+	width: 1.5rem;
+	vertical-align: middle;
+	margin: 0 .15rem;
 }
-.locations h2 {
-	font-size: 3rem;
-	font-family: "Great Vibes", cursive;
-	padding-bottom: 1rem;
-}
-.locations h3 {
-	font-weight: 700;
-	padding: 2rem;
-}
-.blurb div {
-	font-size: 1.125rem;
-	font-family: 'Muli', sans-serif;
-	padding-bottom: .5rem;
-}
-
-/* === SECTION PROGRAM === */
-.program {
-	width: 100%;
-	background-color: rgba(0,0,0,.6);
-	color: #d2ba87;
-	font-family: 'Muli', sans-serif;
-	font-size: 1.125rem;
-}
-.program h2 {
-	text-align: center;
-	font-family: "Great Vibes", cursive;
-	font-size: 3rem;
-	padding: 2rem;
-}
-.program p {
-	font-style: italic;
-	margin-bottom: 2rem;
-}
-.program-wrapper {
-	width: 30vw;
-	margin: 0 auto;
-}
-.program li {
-	font-family: 'Muli', sans-serif;
-	font-size: 1.125rem;
-	margin-bottom: .75rem;
-}
-
-
-
-/* === SECTION GIFTS === */
-
-.gifts {
-	text-align: center;
-	color: #444349;
-	padding: 2.5rem;
-	font-family: 'Libre Baskerville', serif;
-	font-size: 1.125rem;
-}
-.gifts h2 {
-	font-family: 'Great Vibes', cursive;
-	font-size: 3rem;
-	margin-bottom: 2.5rem;
-}
-.gifts img {
-	width: 7.5rem;
-	margin: 2.5rem;
-}
-
-
-/* === SECTION FAQ === */
-
-.faq {
-	width: 100%;
-	text-align: center;
-	background-color: rgba(0,0,0,.6);
-	color: #d2ba87;
-	padding-top: 2.5rem;
-}
-.faq h2 {
-	text-align: center;
-	font-family: 'Great Vibes', cursive;
-	font-size: 3rem;
-	margin-bottom: 3rem;
-}
-.faq h3 {
-	margin-bottom: 2rem;
-	font-size: 1.625rem;
-	line-height: 2.125rem;
-}
-.question-group {
+.date::after {
+	content: "";
+	height: 1px;
+	background-color: #fff;
 	display: inline-block;
-	width: 30%;
-	text-align: left;
-	vertical-align: top;
-	padding: 1.5rem;
-	margin: .5rem;
-}
-.question-group p {
-	font-family: 'Muli', sans-serif;
-	font-size: 1.125rem;
-	line-height: 2rem;
-}
-.question {
-	font-weight: 700;
-}
-.answer {
-	padding-bottom: 1rem;
+	width: 1.5rem;
+	vertical-align: middle;
+	margin: 0 .15rem;
 }
 
 
-/* === SECTION CONTACT === */
-
-.contact {
-	color: #444349;
-	text-align: center;
-	font-family: 'Libre Baskerville', serif;
-	font-size: 1.125rem;
-	margin: 3rem;
+@media screen and (max-width: 768px) {
+	.text {
+		width: 100%;
+		padding: 1rem;
+	}
+	.tagline {
+		text-transform: none;
+	}
+	.text h1 {
+		font-size: 3rem;
+		padding-top: 0;
+		padding-bottom: .5rem;
+	}
 }
-.contact h2 {
-	font-size: 3rem;
-	font-family: 'Great Vibes', cursive;
-	margin-bottom: 1rem;
-}
-.contact p {
-	padding: 1rem;
-}
-
-
-
-
-/* === FOOTER === */
-
-footer {
-	height: 5rem;
-	background-color: #606060;
-	text-align: center;
-	font-family: 'Muli', sans-serif;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100vw;
-	color: #fff;
-}
-footer p {
-	padding: 2rem;
-}
-
